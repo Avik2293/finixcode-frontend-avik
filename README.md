@@ -11,7 +11,7 @@ Fully responsive React + Tailwind + TypeScript UI based on design.
 ## 🚀 Setup
 
 ```bash
-git clone https://github.com/your-user/finixcode-frontend-assignment.git
+git clone https://github.com/Avik2293/finixcode-frontend-avik.git
 cd finixcode-frontend-assignment
 npm install
 npm run dev
