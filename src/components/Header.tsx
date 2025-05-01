@@ -1,24 +1,23 @@
 // import React from 'react';
-import { FaRegCalendarAlt, FaSearch, FaUser, FaBars } from 'react-icons/fa';
-import { GiMedal } from 'react-icons/gi';
+// import { useState } from 'react';
+import { FaSearch, FaBars } from 'react-icons/fa';
+import CustomDatePicker from './CustomDatePicker';
+// import { GiMedal } from 'react-icons/gi';
 
 const Header = () => {
+
     return (
-        <header className="flex items-center justify-between px-6 py-4 bg-white shadow">
+        <header className="flex items-center justify-between px-6 py-4 bg-[#FFFFFF] shadow">
             {/* Logo */}
-            <div className="text-green-500 text-2xl">
-                <GiMedal />
+            <div className="text-green-500 text-xl">
+                {/* <GiMedal /> */}
+                <img src={"../src/assets/Frame 1171276614.png"} alt="Logo" className="h-8 w-auto" />
             </div>
 
             {/* Input Group */}
             <div className="flex gap-4 items-center">
                 {/* Date Picker */}
-                <div className="flex items-center bg-white shadow px-4 py-2 rounded-full">
-                    <span className="text-gray-500 text-sm mr-2">Select date</span>
-                    <div className="w-8 h-8 bg-green-400 text-white rounded-full flex items-center justify-center">
-                        <FaRegCalendarAlt />
-                    </div>
-                </div>
+                <CustomDatePicker />
 
                 {/* Search */}
                 <div className="flex items-center bg-white shadow px-4 py-2 rounded-full">
@@ -35,16 +34,20 @@ const Header = () => {
 
             {/* Right Actions */}
             <div className="flex items-center gap-3">
-                <button className="flex items-center gap-2 bg-green-50 text-green-900 font-medium px-4 py-2 rounded-full text-sm">
-                    <GiMedal className="text-green-700" />
+                <button className="flex items-center gap-2 bg-[#F4F5EF] text-[#34735F] font-medium px-4 py-2 rounded-full text-sm">
+                    {/* <GiMedal className="text-green-700" /> */}
+                    <img src={"../src/assets/Jithbo icon.png"} alt="Logo" className="h-8 w-auto" />
                     Leaderboard
                 </button>
-                <button className="border border-green-700 text-green-700 font-medium px-4 py-2 rounded-full text-sm">
+
+                <button className="border border-[#34735F] text-[#34735F] font-medium px-4 py-2 rounded-full text-sm">
                     Login / Sign up
                 </button>
-                <div className="flex items-center gap-2 bg-white shadow px-3 py-2 rounded-full">
-                    <FaBars className="text-gray-600" />
-                    <FaUser className="text-gray-700" />
+
+                <div className="flex items-center gap-2 bg-white shadow px-3 py-2 rounded-full border-[#E5E5E5">
+                    <FaBars className="text-[#E5E5E5" />
+                    {/* <FaUser className="text-gray-700" /> */}
+                    <img src={"../src/assets/ix_user-profile-filled.png"} alt="Logo" className="h-8 w-auto" />
                 </div>
             </div>
         </header>
